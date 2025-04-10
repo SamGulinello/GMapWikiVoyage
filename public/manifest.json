@@ -1,0 +1,46 @@
+{
+  "manifest_version": 3,
+  "name": "Wikivoyage Button",
+  "version": "1.0",
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' ; object-src 'none'"
+  },
+  "description": "Add a Wikivoyage button to the share options.",
+  "permissions": [
+    "storage",
+    "declarativeNetRequest",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "\u003Call_urls\u003E",
+    "https://en.wikivoyage.org/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icons/icon.png",
+      "48": "icons/icon.png",
+      "128": "icons/icon.png"
+    }
+  },
+  "options_page": "settings.html",
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.com/maps/*"],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["images/wiki.png"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  }
+}

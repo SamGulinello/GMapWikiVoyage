@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Sidepanel</title>
+  </head>
+  <body>
+    <h1>All sites sidepanel extension</h1>
+    <p>This side panel is enabled on all sites</p>
+  </body>
+</html><!DOCTYPE html>
+<html>
+<head>
+    <title>Wikivoyage</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        iframe {
+            width: 100%;
+            height: 100vh;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <iframe id="wikivoyageFrame" src="about:blank"></iframe>
+    <script>
+        chrome.runtime.onMessage.addListener((message) => {
+            if (message.action === "openWikivoyage") {
+                document.getElementById("wikivoyageFrame").src = message.url;
+            }
+        });
+    </script>
+</body>
+</html>
