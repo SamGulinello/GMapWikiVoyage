@@ -4,6 +4,9 @@ GMapWikiVoyage is a Chrome extension that adds a Wikivoyage shortcut to Google M
 
 ![GMapWikiVoyage adding a Wikivoyage button to Google Maps](docs/images/gmap-wikivoyage-demo.png)
 
+## Where to install
+This extension has been published [here](https://chromewebstore.google.com/detail/madpmemifpklkgfachncnopjhlpipmek?utm_source=item-share-cb) on the Chrome Webstore. Simply install it to your browser and open up Google Maps. It will automatically detect the place you're looking at and display a link to the relevent WikiVoyage page if one exists.
+
 ## What It Does
 
 - Detects the current place page in Google Maps.
