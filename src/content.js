@@ -1,11 +1,3 @@
-import M from "mellowtel";
-import Mellowtel from "mellowtel";
-
-(async () => {
-    const mellowtel = new Mellowtel("74e89418"); // Replace with your configuration key
-    await mellowtel.initContentScript();
-})();
-
 let lastPlaceName = "";
 
 async function fetchWikivoyagePage(url) {

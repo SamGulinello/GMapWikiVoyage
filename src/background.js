@@ -1,12 +1,3 @@
-import Mellowtel from "mellowtel";
-
-let mellowtel;
-
-(async () => {
-    mellowtel = new Mellowtel("74e89418"); // Replace with your configuration key
-    await mellowtel.initBackground();
-})();
-
 chrome.runtime.onMessage.addListener(async (message, sender, sendResponse) => {
     if (message.action === "fetchWikivoyagePage") {
         try {
@@ -31,5 +22,4 @@ chrome.runtime.onInstalled.addListener(async function(details) {
         // call a function to handle an update
     }
     **/
-    await mellowtel.generateAndOpenOptInLink();
 });

@@ -6,13 +6,13 @@ module.exports = {
     devtool: "source-map",
     entry: {
         background: path.join(__dirname, 'src', 'background.js'),
-        content: path.join(__dirname, 'src', 'content.js'),
-        settings: path.join(__dirname, 'src', 'settings.js')
+        content: path.join(__dirname, 'src', 'content.js')
     },
     output: {
         path: path.join(__dirname, 'dist'),
         filename: '[name].js',
-        publicPath: ""
+        publicPath: "",
+        clean: true
     },
     module: {
         rules: [
