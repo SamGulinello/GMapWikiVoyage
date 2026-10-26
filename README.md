@@ -15,6 +15,10 @@ This extension has been published [here](https://chromewebstore.google.com/detai
 - Adds a lightweight Wikivoyage button to the Google Maps action row.
 - Opens the matching Wikivoyage travel guide in a new tab.
 
+## Contributing
+
+Contributions are welcome! Please read our [Contributing Guidelines](CONTRIBUTING.md) before opening an issue or pull request.
+
 ## Why I Built It
 
 Google Maps is great for navigation and local discovery, while Wikivoyage is great for travel context: neighborhoods, practical tips, itineraries, culture, and destination overviews. This extension connects those workflows so trip research can move from map to travel guide in one click.
